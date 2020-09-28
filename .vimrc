@@ -14,7 +14,7 @@ set ttimeout
 set ttimeoutlen=100
 set incsearch
 filetype plugin indent on
-map ma iint main(int ac, char **av)<Enter>{<Enter><Enter>}<Esc>ki<Tab>
+map ma iint<Tab><Tab>main(int ac, char **av)<Enter>{<Enter><Enter>}<Esc>ki<Tab>
 map lb i#include <unistd.h><Enter>#include <stdio.h><Enter>#include <stdlib.h><Enter>
 set nocompatible
 

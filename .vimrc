@@ -49,3 +49,4 @@ fun! AutoComplete()
         call feedkeys("\<C-P>", 'n')
     end
 endfun
+"set undofile

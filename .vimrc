@@ -50,3 +50,5 @@ fun! AutoComplete()
     end
 endfun
 "set undofile
+highlight Pmenu ctermbg=darkgrey
+highlight PmenuSel ctermbg=grey

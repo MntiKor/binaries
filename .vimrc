@@ -35,6 +35,9 @@ set foldmethod=syntax
 set title
 highlight ColorColumn ctermbg=darkgrey  guibg=lightgrey
 set colorcolumn=80
+if &filetype ==# 'c'
+	set complete+=k/home/adri/.cdict
+endif
 set completeopt=longest,menuone
 set completeopt=menu,menuone,noinsert
 inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"

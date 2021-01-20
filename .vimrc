@@ -35,9 +35,8 @@ set foldmethod=syntax
 set title
 highlight ColorColumn ctermbg=darkgrey  guibg=lightgrey
 set colorcolumn=80
-if &filetype ==# 'c'
-	set complete+=k/home/adri/.cdict
-endif
+au FileType c exec 'set complete+=k/home/adri/.cdict'
+au FileType cpp exec 'set complete+=k/home/adri/.cdict'
 set completeopt=longest,menuone
 set completeopt=menu,menuone,noinsert
 inoremap <expr> <CR> pumvisible() ? "\<C-Y>" : "\<CR>"

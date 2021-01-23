@@ -31,7 +31,6 @@ set lazyredraw
 set showmatch
 set foldenable
 set foldlevelstart=10
-nnoremap <space> za
 set foldmethod=syntax
 set title
 highlight ColorColumn ctermbg=darkgrey
@@ -58,3 +57,10 @@ highlight PmenuSel ctermbg=grey
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+map <space> <leader>
+nmap <leader>cn <plug>(NorminetteFile)
+highlight cursorline ctermbg=none
+map <leader>cc :cclose<Enter>
+map <leader>n :cn<Enter>
+map <leader>p :cp<Enter>
+hi Search ctermbg=darkgrey ctermfg=darkred

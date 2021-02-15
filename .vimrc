@@ -62,5 +62,5 @@ nmap <leader>cn <plug>(NorminetteFile)
 highlight cursorline ctermbg=none
 map <leader>cc :cclose<Enter>
 map <leader>n :cn<Enter>
-map <leader>p :cp<Enter>
+map <leader>p :cb<Enter>
 hi Search ctermbg=darkgrey ctermfg=darkred
